@@ -1,0 +1,13 @@
+[
+    { "id": 1, "nome": "Mondadori", "contatto": "info-mondadori@gmail.com" },
+    { "id": 3, "nome": "Einaudi", "contatto": "amm-einaudi@gmail.com" },
+    { "id": 4, "nome": "Salani", "contatto": "salani-info@gmail.com" },
+    { "id": 5, "nome": "Edizioni Clandestine", "contatto": "clandestine-info@gmail.com" },
+    { "id": 6, "nome": "Bao Publishing", "contatto": "bao_editore@gmail.com" },
+    { "id": 7, "nome": "Sellerio", "contatto": "amm-sellerio@gmail.com" },
+    { "id": 8, "nome": "BUR", "contatto": "bur_editore@gmail.com" },
+    { "id": 9, "nome": "Sperling & Kupfer", "contatto": "sperling-info@gmail.com" },
+    { "id": 10, "nome": "Bompiani", "contatto": "contact-bompiani@gmail.com" },
+    { "id": 11, "nome": "Adelphi", "contatto": "adelphi-info@gmail.com" }
+  ]
+  

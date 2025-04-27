@@ -1,0 +1,26 @@
+[
+    { "id": 1, "titolo": "Alchimista (L')", "prezzo": 12.00, "pagine": 10, "editore_id": 1 },
+    { "id": 2, "titolo": "Cinquanta sfumature di grigio", "prezzo": 10.20, "pagine": 560, "editore_id": 1 },
+    { "id": 3, "titolo": "Dieci piccoli indiani", "prezzo": 10.20, "pagine": 208, "editore_id": 1 },
+    { "id": 4, "titolo": "Don Chisciotte della Mancha", "prezzo": 20.40, "pagine": null, "editore_id": 3 },
+    { "id": 5, "titolo": "Harry Potter e la Pietra Filosofale", "prezzo": 8.50, "pagine": 302, "editore_id": 4 },
+    { "id": 6, "titolo": "Il Codice da Vinci", "prezzo": 11.00, "pagine": 512, "editore_id": 1 },
+    { "id": 7, "titolo": "Il giovane Holden", "prezzo": 10.20, "pagine": 251, "editore_id": 3 },
+    { "id": 8, "titolo": "Il leone, la strega e l'armadio", "prezzo": 7.65, "pagine": 182, "editore_id": 1 },
+    { "id": 9, "titolo": "Il libretto rosso", "prezzo": 7.22, "pagine": 160, "editore_id": 5 },
+    { "id": 10, "titolo": "Il Piccolo Principe", "prezzo": 4.25, "pagine": 95, "editore_id": 1 },
+    { "id": 11, "titolo": "Il Signore degli Anelli", "prezzo": 25.00, "pagine": 1255, "editore_id": 10 },
+    { "id": 12, "titolo": "Il sogno della camera rossa", "prezzo": 15.30, "pagine": 721, "editore_id": 3 },
+    { "id": 13, "titolo": "La colonna di fuoco", "prezzo": 27.00, "pagine": 912, "editore_id": 1 },
+    { "id": 14, "titolo": "La donna della domenica", "prezzo": 12.00, "pagine": 434, "editore_id": 1 },
+    { "id": 15, "titolo": "Lo Hobbit", "prezzo": 9.35, "pagine": 417, "editore_id": 10 },
+    { "id": 16, "titolo": "Macerie prime", "prezzo": 14.45, "pagine": 192, "editore_id": 6 },
+    { "id": 17, "titolo": "Origin", "prezzo": 21.25, "pagine": 564, "editore_id": 1 },
+    { "id": 18, "titolo": "Quel che resta del giorno", "prezzo": 12.00, "pagine": 276, "editore_id": 3 },
+    { "id": 19, "titolo": "Un mese con Montalbano", "prezzo": 12.75, "pagine": 512, "editore_id": 7 },
+    { "id": 20, "titolo": "Una storia tra due città", "prezzo": 9.77, "pagine": 600, "editore_id": 10 },
+    { "id": 21, "titolo": "Marcovaldo", "prezzo": 10.00, "pagine": 120, "editore_id": 7 },
+    { "id": 22, "titolo": "IT", "prezzo": 25.00, "pagine": 550, "editore_id": 9 },
+    { "id": 23, "titolo": "Gomorra", "prezzo": 12.59, "pagine": 345, "editore_id": 1 }
+  ]
+  

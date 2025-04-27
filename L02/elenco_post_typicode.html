@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      button {text-align: center; background-color: rgb(158, 158, 195); 
+        color: white; border-radius: 20%; margin: 0 auto;}
+    </style>
+    <script>
+
+      // This is what was made in class
+    //   function chiamaServizio() {
+    //     let elencoPosts = [];
+    //     // a call to the web service, get is default method. 
+    //     fetch("https://jsonplaceholder.typicode.com/posts")
+    //     .then(risposta => risposta.json())
+    //     .then(rispostaJson => {
+    //       elencoPosts = rispostaJson;
+
+    //       let primoPost = elencoPosts[0];
+    //       let infoPrimoPost = "<ul>";
+    //       infoPrimoPost += "<li> User id: " + primoPost.userId + "</li>";
+    //       infoPrimoPost += "<li>Id: " + primoPost.id + "</li>";
+    //       infoPrimoPost += "<li>Title: " + primoPost.title + "</li>";
+    //       infoPrimoPost += "<li>Body: " + primoPost.body + "</li>" + "</ul>";
+    //       // alert(infoPrimoPost);
+          
+
+    //       document.getElementById("target").innerHTML = infoPrimoPost;
+
+
+    //     });
+    //   }
+      
+    // //   correct syntax for fetch 
+    function chiamaServizio() {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+        .then(risposta => risposta.json())
+        .then(rispostaJson => {
+            let infoTuttiPost = "<ul>"; // create a list
+
+            rispostaJson.forEach(post => {
+                infoTuttiPost += `
+                    <li>
+                        <strong>User ID:</strong> ${post.userId} <br>
+                        <strong>ID:</strong> ${post.id} <br>
+                        <strong>Title:</strong> ${post.title} <br>
+                        <strong>Body:</strong> ${post.body}
+                    </li><hr>`;
+            });
+
+            infoTuttiPost += "</ul>"; // close a list
+
+            document.getElementById("target").innerHTML = infoTuttiPost;
+        })
+        .catch(error => console.error("Errore nella richiesta:", error)); // errors catching
+
+  }
+    </script>
+</head>
+<body>
+    <button onclick="chiamaServizio()">
+      Chiama il servizio web Typicode
+    </button>
+    <div id="target">Here the data will be displayed.</div>
+    
+    
+
+</body>
+</html>

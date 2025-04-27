@@ -1,0 +1,25 @@
+[
+    { "id": 1, "nome": "John Ronald Reuel", "cognome": "Tolkien", "nazionalita": "za" },
+    { "id": 2, "nome": "Dan", "cognome": "Brown", "nazionalita": "us" },
+    { "id": 3, "nome": "Paulo", "cognome": "Coelho", "nazionalita": "br" },
+    { "id": 4, "nome": "J. D.", "cognome": "Salinger", "nazionalita": "us" },
+    { "id": 5, "nome": "Agatha", "cognome": "Christie", "nazionalita": "en" },
+    { "id": 6, "nome": "J. K.", "cognome": "Rowling", "nazionalita": "en" },
+    { "id": 7, "nome": "Tsao", "cognome": "Chan", "nazionalita": "cn" },
+    { "id": 8, "nome": "E. L.", "cognome": "James", "nazionalita": "en" },
+    { "id": 9, "nome": "Antoine", "cognome": "de Saint-Exupéry", "nazionalita": "fr" },
+    { "id": 10, "nome": "Charles", "cognome": "Dickens", "nazionalita": "en" },
+    { "id": 11, "nome": "Miguel", "cognome": "de Cervantes", "nazionalita": "es" },
+    { "id": 12, "nome": "Clive Staples", "cognome": "Lewis", "nazionalita": "en" },
+    { "id": 13, "nome": "Tse-tung", "cognome": "Mao", "nazionalita": "cn" },
+    { "id": 14, "nome": "Michele", "cognome": "Rech, Zerocalcare", "nazionalita": "it" },
+    { "id": 15, "nome": "Andrea", "cognome": "Camilleri", "nazionalita": "it" },
+    { "id": 16, "nome": "Ken", "cognome": "Follett", "nazionalita": "en" },
+    { "id": 17, "nome": "Kazuo", "cognome": "Ishiguro", "nazionalita": "jp" },
+    { "id": 18, "nome": "Carlo", "cognome": "Fruttero", "nazionalita": "it" },
+    { "id": 19, "nome": "Franco", "cognome": "Lucentini", "nazionalita": "it" },
+    { "id": 20, "nome": "Italo", "cognome": "Calvino", "nazionalita": "it" },
+    { "id": 21, "nome": "Stephen", "cognome": "King", "nazionalita": "us" },
+    { "id": 22, "nome": "Isabel", "cognome": "Allende", "nazionalita": "cl" }
+  ]
+  

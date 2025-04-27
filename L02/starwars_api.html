@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {text-align: center; background-color: rgb(158, 158, 195); 
+          color: white; border-radius: 20%;}
+      </style>
+      <script>
+         function callStarWars() {
+    fetch("https://swapi.dev/api/people")
+        .then(response => response.json())
+        .then(respJson => {
+            let allPeople = "<ul>"; // create a list
+
+            respJson.results.forEach(person => {
+                allPeople += `
+                    <li>
+                        <strong>Name:</strong> ${person.name} <br>
+                        <strong>Gender:</strong> ${person.gender} <br>
+                        <strong>Birth Date:</strong> ${person.birth_year} <br>
+                        <strong>Mass:</strong> ${person.mass}
+                    </li><hr>`;
+            });
+
+            allPeople += "</ul>"; // close a list
+
+            document.getElementById("target").innerHTML = allPeople;
+        })
+        .catch(error => console.error("Error in the request", error)); // errors catching
+
+  }
+      </script>
+</head>
+<body>
+    <button onclick="callStarWars()">Press me</button>
+    <div id="target">Here the data will be displayed.</div>
+</body>
+</html>
