@@ -46,6 +46,28 @@
                 
         }
 
+        function addUser() {
+            const inputNome = document.getElementById('nome').value;
+            const inputCognome = document.getElementById('cognome').value;
+            const inputDataDiNascita = document.getElementById('data-di-nascita').value;
+
+            fetch('http://localhost:3000/api/v1/users/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    nome: inputNome,
+                    cognome: inputCognome,
+                    data_di_nascita: inputDataDiNascita
+                })
+            })
+            .then(() => console.log('User added successfully!'))
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
         
     </script>
 </head>
@@ -66,6 +88,18 @@
     </table>
     <div class="container">
 
+    </div>
+
+    <div class="container">
+        <h1>USER FORM</h1>
+        <form action="" method="post">
+           
+            <input type="text" name="nome" placeholder="Nome di user" id="nome"><br>
+            <input type="text" name="cognome" placeholder="Cognome di User" id="cognome"><br>
+            <input type="date" name="data_di_nascita" placeholder="Data di Nascita" id="data-di-nascita"><br>
+            <button onclick="addUser()">Add User</button>
+
+        </form>
     </div>
     
     
