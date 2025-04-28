@@ -1,0 +1,21 @@
+GET http://localhost:3000/api/v1/users/
+
+DELETE http://localhost:3000/api/v1/users/2
+
+POST http://localhost:3000/api/v1/users/
+Content-Type: application/json
+
+{ "id":2,
+  "nome": "Ursula",
+  "cognome": "Von Der Leyen",
+  "data_di_nascita": "1965-09-15"
+}
+
+PUT http://localhost:3000/api/v1/users/2
+Content-Type: application/json
+
+{ 
+  "nome": "Giorgia",
+  "cognome": "Meloni",
+  "data_di_nascita": "1975-11-24"
+}

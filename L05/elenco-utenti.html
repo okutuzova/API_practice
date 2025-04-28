@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      button {text-align: center; background-color: rgb(158, 158, 195); 
+        color: white; border-radius: 20%; margin: 0 auto;}
+    </style>
+    <script>
+
+    
+
+      
+    // //   correct syntax for fetch 
+    function chiamaServizio() {
+        let ris = '';
+        let elencoUtenti = [];
+        fetch("http://localhost:3000/api/v1/users/")
+            .then(risposta => risposta.json())
+            .then(rispostaJson => {
+                elencoUtenti = rispostaJson;
+                console.log(rispostaJson);
+
+                for (let i=0; i<elencoUtenti.length; i++){
+                    ris += '<tr><td>' + elencoUtenti[i].ID + '</td></td>';
+                    ris += '<tr><td>' + elencoUtenti[i].nome + '</td></td>';
+                    ris += '<tr><td>' + elencoUtenti[i].cognome + '</td></td>';
+                    ris += '<tr><td>' + elencoUtenti[i].data_di_nascita + '</td></td>';
+                }
+                document.getElementById("tabellaUtentiBody").innerHTML = ris;
+        })
+        .catch(error => console.error("Errore nella richiesta:", error)); // errors catching
+  }
+
+        function deleteUser() {
+        fetch('http://localhost:3000/api/v1/users/2', { method: 'DELETE' }) 
+                .then(() => {const p = document.createElement('p');
+                p.textContent = 'Delete successful';
+                document.querySelector('.container').appendChild(p);}
+                )
+                
+                // .then(() => console.log('User deleted'))
+                // .then(() => element.innerHTML = 'Delete successful');
+                
+        }
+
+        
+    </script>
+</head>
+<body>
+    <button onclick="chiamaServizio()">
+      Chiama il servizio web con node
+    </button>
+    <button onclick="deleteUser()">
+      Delete a user
+    </button>
+    <div id="target">Here the data will be displayed.</div>
+    <table>
+        <thead>
+            <th>ID</th>
+        </thead>
+            <tbody id="tabellaUtentiBody"></tbody>
+        
+    </table>
+    <div class="container">
+
+    </div>
+    
+    
+
+</body>
+</html>
