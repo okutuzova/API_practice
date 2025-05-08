@@ -1,0 +1,21 @@
+GET http://localhost:4000/myamazon/api/v1/utenti/
+
+DELETE http://localhost:4000/myamazon/api/v1/utenti/2
+
+POST http://localhost:4000/myamazon/api/v1/utenti/
+Content-Type: application/json
+
+{ "id":2,
+  "nome": "Ursula",
+  "cognome": "Von Der Leyen",
+  "data_di_nascita": "1965-09-15"
+}
+
+PUT http://localhost:4000/myamazon/api/v1/utenti/2
+Content-Type: application/json
+
+{ 
+  "nome": "Giorgia",
+  "cognome": "Meloni",
+  "data_di_nascita": "1975-11-24"
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books List</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Image</th>
+        </tr>
+        </thead>
+        <tbody id="books"></tbody>
+    </table>
+    
+    <div class="container">
+        <h1>BOOKS FORM</h1>
+        <form action="" method="post">
+            <input type="text" name="title" placeholder="Book Title" id="title"><br>
+            <input type="text" name="author" placeholder="Author" id="author"><br>
+            <input type="text" name="genre" placeholder="Genre" id="genre"><br>
+            <input type="text" name="image" placeholder="image" id="image"><br>
+        </form>
+        <button id="showBooks">Show Books</button>
+        <button id="addBook">Add Book</button>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+// To receive all books 
+GET http://localhost:3000/api/v1/books/
+// To receive one book
+GET http://localhost:3000/api/v1/books/1
+// To add a new book
+POST http://localhost:3000/api/v1/books/
+Content-Type: application/json
+
+{
+    "id":3,
+    "title":"The Great Gatsby",
+    "author":"F. Scott Fitzgerald",
+    "genre":"Classic",
+    "image": "Some image URL"
+}
+
+// To update a book
+PUT http://localhost:3000/api/v1/books/3
+Content-Type: application/json
+
+{
+    "title":"Anna Karenina",
+    "author":"Leo Tolstoi",
+    "genre":"Classic",
+    "image": "Some image URL"
+}
+
+// To delete a book
+DELETE http://localhost:3000/api/v1/books/3
