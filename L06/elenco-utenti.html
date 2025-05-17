@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {text-align: center; 
+        border-radius: 10%; margin: 0 auto;}
+    </style>
+    <script>
+        function cancellaUtente(id){
+            fetch('http://localhost:3000/api/v1/users/'+id, { method: 'DELETE' })
+            .then(() => document.getElementById("target").innerHTML = 'Utente cancellato ');
+
+        }    
+
+        function chiamaServizioPerElencoUtenti(){
+           let elencoUtenti =[];
+           let ris =""; 
+            // faccio una chiamata ad un servizio web, metodo di default get
+            fetch("http://localhost:3000/api/v1/users")
+                .then(risposta => risposta.json() )
+                .then(rispostaJson => {
+                    elencoUtenti = rispostaJson;
+
+                    for(let i=0; i< elencoUtenti.length; i++){
+                        ris+=`<tr>
+                                <td>${elencoUtenti[i].ID}</td>
+                                <td>${elencoUtenti[i].nome}</td>
+                                <td>${elencoUtenti[i].cognome}</td>
+                                <td>${elencoUtenti[i].data_di_nascita}</td>
+                                <td><button onclick='cancellaUtente(${elencoUtenti[i].ID})'>Cancella</button></td>
+                            </tr>`;
+                    }    
+                   
+                    document.getElementById("tabellaUtenti").style.display = "block";
+ 
+                    document.getElementById("tabellaUtentiBody").innerHTML = ris;
+                });
+            
+            //alert("padrone .... chiamato ???");
+        }    
+
+    </script>
+</head>
+<body>
+    <button onclick="chiamaServizioPerElencoUtenti()">Chiama il servizio web su localhost fatto con node </button> 
+
+    <br/>
+   
+    <div id="target"></div>
+   <table id ="tabellaUtenti" style="display: none; margin-top: 10px; border: 1px solid black;">
+        <thead>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Email</th>
+            <th>Azioni</th>
+        </thead>
+        <tbody id="tabellaUtentiBody"></tbody>
+
+   </table>
+
+
+</body>
+</html>

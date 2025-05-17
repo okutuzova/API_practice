@@ -1,0 +1,17 @@
+GET http://localhost:3001/api/v1/artists/
+
+// DELETE http://localhost:3001/api/v1/artists/2
+
+POST http://localhost:3001/api/v1/artists/
+Content-Type: application/json
+
+{ 
+  "Name": "Tanzwut"
+}
+
+PUT http://localhost:3001/api/v1/artists/300
+Content-Type: application/json
+
+{ 
+  "Name": "RammsteininLove"
+}
